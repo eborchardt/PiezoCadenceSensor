@@ -11,12 +11,12 @@ class PiezoCadence {
     int _pin;
     int _threshold;
     int _maSize;
-    volatile int count;
-    unsigned long lastTime;
-    unsigned long thisTime;
-    int inter;
-    int maValues[MA_SIZE];
-    int maIndex;
+    volatile int _count;
+    unsigned long _lastTime;
+    unsigned long _thisTime;
+    int _inter;
+    int _maValues[MA_SIZE];
+    int _maIndex;
 };
 
 #endif
