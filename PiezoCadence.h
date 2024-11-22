@@ -7,9 +7,16 @@ class PiezoCadence {
     void begin();
     int getCadence();
   private:
+    void stepDetection();
     int _pin;
     int _threshold;
     int _maSize;
+    volatile int count;
+    unsigned long lastTime;
+    unsigned long thisTime;
+    int inter;
+    int maValues[MA_SIZE];
+    int maIndex;
 };
 
 #endif
